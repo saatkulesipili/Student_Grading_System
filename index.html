@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Grading System</title>
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    
+    <main class="card">
+
+        <h1>Student Grading System</h1>
+
+        <div class="form">
+            <input type="text" id="name" placeholder="Öğrenci adı">
+            <input type="text" id="note" placeholder="Not (0-100)">
+            <button class="btn" id="saveBtn" onclick="studentAdd()">Add</button>
+            <button class="btn" id="cancelBtn" onclick="cancelEdit()">Cancel</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="Statistics">
+            <div><span id="average">-</span><small>Average</small></div>
+            <div><span id="highest">-</span><small>Highest</small></div>
+            <div><span id="lowest">-</span><small>Lowest</small></div>
+            <div><span id="passed">-</span><small>Passed</small></div>
+        </div>
+
+        <table> <!--table tittle-->
+            <thead>
+                <tr> <!--table row-->
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Letter</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </main>
 </body>
+
 </html>
