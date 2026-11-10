@@ -23,7 +23,7 @@
         <h1>Student Grading System</h1>
 
         <div class="form">
-            <input type="text" id="name" placeholder="Öğrenci adı">
+            <input type="text" id="name" placeholder="Student name">
             <input type="text" id="note" placeholder="Not (0-100)">
             <button class="btn" id="saveBtn" onclick="studentAdd()">Add</button>
             <button class="btn" id="cancelBtn" onclick="cancelEdit()">Cancel</button>
@@ -31,11 +31,23 @@
 
         <p id="message"></p>
 
-        <div class="Statistics">
-            <div><span id="average">-</span><small>Average</small></div>
-            <div><span id="highest">-</span><small>Highest</small></div>
-            <div><span id="lowest">-</span><small>Lowest</small></div>
-            <div><span id="passed">-</span><small>Passed</small></div>
+        <div class="statistic">
+            <div>
+                <span id="average">-</span>
+                <small>Average</small>
+            </div>
+            <div>
+                <span id="highest">-</span>
+                <small>Highest</small>
+            </div>
+            <div>
+                <span id="lowest">-</span>
+                <small>Lowest</small>
+            </div>
+            <div>
+                <span id="passed">-</span>
+                <small>Passed</small>
+            </div>
         </div>
 
         <table> <!--table tittle-->
@@ -51,6 +63,7 @@
             <tbody id="list"></tbody>
         </table>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
