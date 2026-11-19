@@ -66,21 +66,21 @@ button:hover {
     margin: 8px 0;
 }
 
-.statistics {
+.statistic {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     margin: 16px 0;
 }
 
-.statistics div {
+.statistic div {
     background: #f5f7fb;
     padding: 12px;
     border-radius: 8px;
     text-align: center;
 }
 
-.statistics span {
+.statistic span {
     display: block;
     font-size: 22px;
     font-weight: bold;
